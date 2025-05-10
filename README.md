@@ -33,7 +33,7 @@ NarekoShop é uma loja virtual simples e funcional onde os produtos podem ser ex
 1. Clone o repositório:
    ```bash
    git clone https://github.com/SEU_USUARIO/NarekoShop.git
-Importe o banco de dados (banco.sql) no seu MySQL local
+Importe o banco de dados (nareko.sql) no seu MySQL local
 
 Configure a conexão no arquivo:
 includes/connection.php
