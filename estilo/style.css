@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    background: #88bff5;
+    ;
+}
+
+.logo {
+    padding: 10px 0;
+    float: left;
+}
+
+.logo a {
+    font-size: 19px;
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.desktop {
+    float: right;
+}
+
+nav.desktop li {
+    font-weight: 300;
+    display: inline-block;
+}
+
+nav.desktop a {
+    display: inline-block;
+    padding: 13px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.chamada-escolher {
+    text-align: center;
+    background: #42a5f5;
+    padding: 15px 0;
+}
+
+.chamada-escolher h2 {
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.produto-single-box {
+    max-width: 300px;
+    /* Largura máxima do contêiner do produto */
+    margin: 10px;
+    /* Espaçamento entre produtos */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    box-sizing: border-box;
+    /* Evita problemas com padding */
+}
+
+.lista-items {
+    padding: 40px 0;
+}
+
+
+/* Contêiner pai para os produtos */
+
+.produtos-container {
+    display: flex;
+    /* Usa Flexbox para alinhar os itens lado a lado */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha em telas menores */
+    gap: 20px;
+    /* Espaçamento entre os produtos */
+    justify-content: center;
+    /* Centraliza os produtos horizontalmente */
+}
+
+
+/* Estilização de cada produto */
+
+.produto-single-box {
+    max-width: 300px;
+    /* Largura máxima do contêiner do produto */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    box-sizing: border-box;
+    /* Evita problemas com padding */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #f9f9f9;
+    /* Fundo leve para destaque */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+
+/* Estilização da imagem */
+
+.produto-single-box img {
+    width: 100%;
+    /* Imagem ocupa a largura do contêiner */
+    max-width: 250px;
+    /* Limita a largura máxima da imagem */
+    height: auto;
+    /* Mantém a proporção */
+    object-fit: contain;
+    /* Garante que a imagem não seja distorcida */
+    display: block;
+    /* Remove espaço indesejado abaixo da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem */
+}
+
+
+/* Estilização do texto e botão */
+
+.produto-single-box p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.produto-single-box a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.produto-single-box a:hover {
+    background-color: #0056b3;
+}
+
+.tabela-pedidos {
+    margin-top: 40px;
+}
+
+.tabela-pedidos h2 {
+    margin: 15px 0;
+    border-bottom: 2px solid #ccc;
+    font-size: 24px;
+    color: #ccc;
+}
+
+.tabela-pedidos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-pedidos tr:first-child td {
+    font-weight: bold;
+}
+
+.tabela-pedidos td {
+    padding: 8px;
+    color: #4b4b4b;
+    border: 1px solid #ccc;
+}
+
+.finalizar-pedido h2 {
+    padding: 10px 0;
+    color: #4b4b4b;
+    font-weight: normal;
+    float: right;
+}
+
+.btn-pagamento {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+
+/* Responsividade para telas menores */
+
+
+/* Responsividade para telas menores */
+
+@media (max-width: 768px) {
+    .produto-single-box {
+        max-width: 200px;
+        /* Reduz o tamanho em telas menores */
+    }
+    .produto-single-box img {
+        max-width: 180px;
+        /* Ajusta a imagem para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .produto-single-box {
+        max-width: 150px;
+        /* Ainda menor para telas muito pequenas */
+    }
+    .produto-single-box img {
+        max-width: 130px;
+    }
+}
