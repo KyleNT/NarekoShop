@@ -3,8 +3,8 @@ include('includeConstants.php');
 
 if(isset($_POST['notificatonType']) && $_POST['notificationType' == 'transaction']){
 
-    $email = 'nes.wil.con64@gmail.com';
-    $token = '6791891720DC4D7F947FFD38D1BA32C0';
+    $email = '';
+    $token = '';
 
     $url = 'https://ws.sandbox.pagseguro.uol.com.br/v2/transactions/notifications/'.$_POST['notificationCode'].'?email='.$email.'$token='.$token;
 
