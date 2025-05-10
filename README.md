@@ -40,9 +40,10 @@ includes/connection.php
 
 Acesse:
 
-arduino
-Copiar
-Editar
+
 http://localhost/NarekoShop/
+
+---
 📄 Licença
+
 Este projeto é livre para uso acadêmico e demonstração de habilidades em e-commerce.
