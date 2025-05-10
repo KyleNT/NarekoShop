@@ -29,11 +29,11 @@
 	define('BASE_DIR_PAINEL',__DIR__.'/painel');
 
 
-    define('HOST', 'sql207.infinityfree.com');
-    define('PORT', '3307');
-    define('DBNAME', 'if0_35777390_crowphilis');
-    define('USER', 'if0_35777390');
-    define('PASS', 'EMx9ekTmWE');
+    define('HOST', '');
+    define('PORT', '');
+    define('DBNAME', '');
+    define('USER', '');
+    define('PASS', '');
 
 
 	//Constantes para o painel de controle
